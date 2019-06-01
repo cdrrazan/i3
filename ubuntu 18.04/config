@@ -105,10 +105,10 @@ set $workspace2 "Fox  "
 set $workspace3 "IDE "
 set $workspace4 "Chat "
 set $workspace5 "File "
-set $workspace6 "Online "
-set $workspace7 "Vib "
-set $workspace8 "Mail "
-set $workspace9 "Music "
+set $workspace6 "TMP 1"
+set $workspace7 "TMP 2"
+set $workspace8 "TMP 3"
+set $workspace9 "TMP 4"
 set $workspace10 "Note "
 
 # switch to workspace
@@ -260,3 +260,4 @@ bindsym $mod+Tab workspace back_and_forth
 
 #workspace swap
 bindsym $mod+Shift+m exec /home/cdrrazan/.config/i3/swap.sh
+
