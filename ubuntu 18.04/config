@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monaco 12.5
+font pango:monaco 13
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -261,3 +261,8 @@ bindsym $mod+Tab workspace back_and_forth
 #workspace swap
 bindsym $mod+Shift+m exec /home/cdrrazan/.config/i3/swap.sh
 
+#display setup
+exec_always xrandr --output eDP-1-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-0 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off
+
+# dpi
+exec_always xrandr --dpi 120
