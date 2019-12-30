@@ -211,7 +211,6 @@ colors {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
    }
 }
-
 # i3
 # i3lock
 #bindsym $mod+shift+x exec i3lock
@@ -260,9 +259,6 @@ bindsym $mod+Tab workspace back_and_forth
 
 #workspace swap
 bindsym $mod+Shift+m exec /home/cdrrazan/.config/i3/swap.sh
-
-#display setup
-exec_always xrandr --output eDP-1-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-0 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off
 
 # dpi
 exec_always xrandr --dpi 120
