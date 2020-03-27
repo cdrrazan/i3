@@ -144,7 +144,6 @@ assign [class="Firefox"] $workspace2
 
 # Workspace 3 = Editor related apps
 assign [class="jetbrains-rubymine"] $workspace3
-#for_window [class="github desktop"] move to workspace $workspace3
 
 # Workspace 4 = Chat related apps
 assign [class="Slack"] $workspace4
@@ -156,8 +155,9 @@ assign [class="vlc"] $workspace5
 
 # Workspace 6 = Project Management related apps
 assign [class="Trello"] $workspace6
-assign [class="Github Desktop"] $workspace3
-assign [class="nixnote2"] $workspace3
+#for_window [class="github desktop"] move to workspace $workspace3
+assign [class="Github Desktop"] $workspace6
+assign [class="nixnote2"] $workspace6
 
 # Workspace 7 = TBDx
 # Workspace 8 = TBDx
