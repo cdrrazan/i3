@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monaco 11.5
+font pango:monaco 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -141,13 +141,20 @@ assign [class="Gnome-terminal"] $workspace1
 
 # Workspace 2 = Browser related apps
 assign [class="Firefox"] $workspace2
+assign [class="Chromium-browser"] $workspace2
 
 # Workspace 3 = Editor related apps
 assign [class="jetbrains-rubymine"] $workspace3
+assign [class="Sublime_text"] $workspace3
 
 # Workspace 4 = Chat related apps
 assign [class="Slack"] $workspace4
 assign [class="TelegramDesktop"] $workspace4
+assign [class="ViberPC"] $workspace4
+assign [class="Skype"] $workspace4
+# Google Hangout : Yakyak - Unofficial Build via Github
+# Link - https://github.com/yakyak/yakyak
+assign [class="yakyak"] $workspace4
 
 # Workspace 5 = File manager related apps
 assign [class="Thunar"] $workspace5
@@ -208,14 +215,12 @@ set $text-color           #f3f4f5
 set $inactive-text-color  #676E70
 set $urgent-bg-color      #E53935
 
-
 # class                 border  backgr. text    indicator
 client.focused          #4c7899 #285577 #ffffff #2e9ef4
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000
-
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -241,10 +246,10 @@ colors {
 bindsym $mod+shift+x exec /home/cdrrazan/.config/i3/i3lock-fancy-multimonitor/lock
 
 # EXEC_ALWAYS
-#network-manager setup
+# network-manager setup
 exec_always nm-applet
 
-#clipboard manager setup
+# clipboard manager setup
 exec_always diodon
 
 # System
@@ -267,20 +272,20 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Customization
-#wallpaper setup
+# wallpaper setup
 exec_always feh --bg-fill /home/cdrrazan/Pictures/Wallpapers/pl.jpg
 
-#screenshot
+# screenshot
 bindsym $mod+shift+s exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/i3/Screenshot/'
 
 # Workspace
-#workspace move
+# workspace move
 bindsym $mod+x move workspace to output right
 
-#workspace switch
+# workspace switch
 bindsym $mod+Tab workspace back_and_forth
 
-#workspace swap
+# workspace swap
 bindsym $mod+Shift+m exec /home/cdrrazan/.config/i3/swap.sh
 
 # dpi
